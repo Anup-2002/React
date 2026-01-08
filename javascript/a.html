@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ExecuteClick(){
+            setTimeout(()=>{
+                console.log(" Macro task");// macro task always run after micro task used in settimeout debouncer is example of macro task
+            },0);
+            console.log(" Normal task/Synchronous task"
+            );
+            /* javascript can run give set of tasklk by following way first is normal task second is micro task third is macro task */
+            Promise.resolve().then(()=>{
+                console.log(" Micro task");// micro task always run before macro task used in promise
+            });
+        }
+        //event profiling in javascript is used to measure the performance of event handling in web applications. It helps developers identify bottlenecks and optimize the responsiveness of their applications by analyzing how long it takes for events to be processed and how they impact the overall user experience. 
+    </script>
+</head>
+<body>
+    <button onclick="ExecuteClick()">Click Me</button>
+</body>
+</html>
