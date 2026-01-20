@@ -9,10 +9,18 @@ import {Login} from './component/login/login.jsx'
 import {DataBinding} from './component/data-binding/data-binding.jsx';
 import { EventBinding } from './component/event-bonding/event_binidng.jsx';
 import { Fakestore } from './component/fakestore/fakestore.jsx';
+import { MouseDemo } from './component/mousedemo/mouse-demo.jsx';
+import { MouseMove } from './component/mouse_move/mouse_move.jsx';
+import {ButtonDemo} from './component/button-demo/button-demo.jsx';
+// import { KeyDemo } from './component/mouse-demo/key-demo.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <EventBinding/>
-    <Fakestore/>
+    <ButtonDemo/>
+    {/* <KeyDemo/> */}
+    {/* <MouseMove/>
+    <MouseDemo/>
+    <EventBinding/> */}
+    {/* <Fakestore/> */}
     {/* <h1>Hello from React!</h1>
     <div className='alert alert-info'>
       <p>this first component name DataBinding</p> 
