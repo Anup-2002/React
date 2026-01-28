@@ -1,0 +1,60 @@
+React Component
+1)Design
+2)Style
+3)logic/behaviour
+
+
+1)Design: using html
+2)Style: using css
+3)logic/behaviour: using js jsx and typescript tsx
+
+function component(){
+    return(
+        <h1>hello world</h1>
+    )
+}
+Technically component is javascript function and class
+React 19x component is a function or class that returns a set of instructions to the browser
+but they recommended to use function component
+
+componets Rules:
+1)componet name should start with uppercase
+2)componet should return html/jsx
+3)componet should be self closing
+4)componet should be reusable
+
+componet types:
+1)function component
+2)class component
+
+syntax :declaration
+function component(){
+    return(
+        <h1>hello world</h1>
+    )
+}
+syntax :expression
+const component = () => {
+    return(
+        <h1>hello world</h1>
+    )
+}
+- componet function can't be void types
+- function currying is where function returns another function
+- componet function can't be currying
+- componet function can return only one fragment
+
+return(
+    <h1>hello world</h1>    //invalid
+    <p>hello world</p>
+)
+return(
+    <div>
+    <h1>hello world</h1>    //valid
+    <p>hello world</p>
+    </div>
+)
+- componet tag should be closed
+- every jsx element can use only properties not attributes
+-<img class="img" src="" alt="">//invalid
+<img className="img" src="" alt="">//valid

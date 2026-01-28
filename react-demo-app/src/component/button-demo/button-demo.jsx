@@ -21,7 +21,7 @@ export  function ButtonDemo() {
             <h1 style={{ userSelect: "none" }}>HIGHLY CONFIDENTIAL</h1>
             <p onSelectStart={handleSelection}> Right  click not allowed</p>
             <img src="mobile-1.png" alt="Mobile" onDoubleClick={handleDoubleClick}  onContextMenu={handleContextMenu} />
-
+                
         </div>
     );
 }

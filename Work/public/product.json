@@ -1,0 +1,16 @@
+{
+    "title": "Apple iPhone 16 (White, 128 GB)",
+    "price": 79999,
+    "image": "./iphone16(White).jpg",
+    "rating": {
+        "rate": 4.8,
+        "count": 2500,
+        "reviews":57842
+    },
+    "offers": [
+        "10% Instant Discount on HDFC Bank Credit and Debit Cards",
+        "5% Cashback on Flipkart Axis Bank Card",
+        "No Cost EMI on Bajaj Finserv EMI Card"
+    ]
+
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "title":"DHURUNDHAR",
+        "poster":"./dhurundhar.jpg",
+        "language":"hindi",
+        "certificate":"A"
+    },
+    {
+        "title":"Inception",
+        "poster":"./inception.jpg",
+        "language":"english",
+        "certificate":"U/A"
+    },
+    {
+        "title":"Parasite",
+        "poster":"./parasite.jpg",
+        "language":"korean",
+        "certificate":"A"
+    },
+    {
+        "title":"Spirited Away",
+        "poster":"./spiritedaway.jpg",
+        "language":"japanese",
+        "certificate":"U"
+    }
+]

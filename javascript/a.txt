@@ -1,0 +1,13 @@
+micro and macro
+micro operation in react js
+In React.js, understanding micro and macro operations is essential for optimizing performance and managing asynchronous tasks effectively.
+Microtasks and macrotasks are two types of tasks in the JavaScript event loop that help manage asynchronous operations.
+Microtasks:
+Microtasks are tasks that are executed immediately after the currently executing script and before any rendering or I/O operations. They have a higher priority than macrotasks. Examples of microtasks include:
+Promises: When a promise is resolved or rejected, the associated .then() or .catch() callbacks are added to the microtask queue.
+Mutation Observers: These are used to watch for changes in the DOM and execute callbacks when changes occur.
+Macrotasks:
+Macrotasks, on the other hand, are tasks that are executed after the microtasks have been completed. They have a lower priority compared to microtasks. Examples of macrotasks include:
+setTimeout and setInterval: These functions schedule tasks to be executed after a specified delay.
+I/O Operations: Tasks related to network requests, file reading/writing, etc.
+User Interactions: Events like clicks, key presses, etc., are handled as macrotasks

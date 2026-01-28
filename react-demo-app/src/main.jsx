@@ -12,9 +12,15 @@ import { Fakestore } from './component/fakestore/fakestore.jsx';
 import { MouseDemo } from './component/mousedemo/mouse-demo.jsx';
 import { MouseMove } from './component/mouse_move/mouse_move.jsx';
 import {ButtonDemo} from './component/button-demo/button-demo.jsx';
+import { Elementstate } from './component/Element-State-Event/onchange.jsx';
+import { EMICalualator } from './component/EMICalualator/EMICalualator.jsx';
+import { DebounceDemo } from './component/debounce-demo/debounce-demo.jsx';
 // import { KeyDemo } from './component/mouse-demo/key-demo.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <DebounceDemo/>
+    <EMICalualator/>
+    <Elementstate/>
     <ButtonDemo/>
     {/* <KeyDemo/> */}
     {/* <MouseMove/>

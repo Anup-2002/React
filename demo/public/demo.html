@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn links<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.min.js"></script>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cart {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/babel">
+        function Login() {
+            return (
+                <form action="">
+                    <h3>user login</h3>
+                    <dl>
+                        <dt>username</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>password</dt>
+                        <dd><input type="password" /></dd>
+                        <dt>login</dt>
+                        <dd><input type="submit" /></dd>
+                    </dl>
+                </form>
+            )
+        }
+        function Navbar() {
+            return (
+                <nav>
+                    <div className="brand-title">Sopping</div>
+                    <div className="nav-links">
+                        <a href="#">login</a>
+                        <a href="#">register</a>
+                        <a href="#">logout</a>
+                    </div>
+                    <div className="cart">
+                        <a href="#">cart</a>
+                    </div>
+                </nav>
+            )
+        }
+
+        const element = ReactDOM.createRoot(document.getElementById("root")).render(<section>
+            <Navbar />
+            <Login />
+            <Login />
+        </section>);
+    </script>
+    <noscript>
+        pls enable js to run this app
+    </noscript>
+    <div id="root">
+
+    </div>
+</body>
+
+</html>
